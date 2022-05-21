@@ -6,6 +6,8 @@ window.addEventListener('scroll', () => {
         menu.classList.toggle('sticky', window.scrollY > 20)
     } else {
         // menu.classList.remove('sticky')
-        menu.classList.toggle('fade-in', window.scrollY > 50)
+        menu.classList.toggle('fade-in', window.scrollY > 110)
     }
 })
+
+const listMenu = document.querySelector('.hamb-menu');
