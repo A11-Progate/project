@@ -11,3 +11,11 @@ window.addEventListener('scroll', () => {
 })
 
 const listMenu = document.querySelector('.hamb-menu');
+const hamb = document.querySelector('.icon');
+
+// hamb.addEventListener('click', () => {
+//     listMenu.classList.toggle('show');
+// })
+const showMenu = () => {
+    listMenu.classList.toggle('show');
+}

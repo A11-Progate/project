@@ -80,13 +80,17 @@ header .menu{
     .hamb-menu{
         display: none;
     }
-    .hamb-menu .menu-item{
+    /* .hamb-menu .menu-item{
         display: none;
-    }
+    } */
     .icon{
         display: block;
         color: black;
         font-size: 28px;
+    }
+    
+    .show {
+        display: block;
     }
 }
 
