@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -20,13 +21,18 @@ header{
     font-size: 20px;
 }
 
+h3 a {
+    text-decoration: none;
+    color: black;
+}
+
 header .menu{
     display: flex;
     gap: 10px;
     list-style: none;
 }
 
-li a {
+.menu-item a {
     color: black;
     text-decoration: none;
 }
@@ -36,14 +42,49 @@ li a {
     padding-right: 10px;
 }
 
+.hamb-menu{
+    display: none;
+    list-style: none;
+}
+
 .sticky{
     position: sticky;
     padding: 10px 20px;
     background-color: black;
     color: white;
-    font-size: 16px;
+    font-size: 15.5px;
+}
+
+.sticky h3 a {
+    color: white;
 }
 
 .sticky .menu a {
     color: white;
+}
+
+.fade-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: fadein .75s forwards;
+}
+
+@media screen and (max-width: 720px){
+    ul.menu{
+        display: none;
+    }
+    .hamb-menu{
+        display: block;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        top: -70px;
+    }
+    100%{
+        top: 0;
+    }
 }
