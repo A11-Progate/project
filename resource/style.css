@@ -86,7 +86,7 @@ header .menu{
 }
 
 .article_top{
-    background-image: url("/resource/images/title_bg1.jpg");
+    background-image: url("./images/title_bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     color : white;
@@ -141,7 +141,7 @@ header .menu{
 
 .chess_opening{
     color:#ddd;
-    background-image: url("/resource/images/chess_opening1.jpg");
+    background-image: url("./images/chess_opening1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ header .menu{
 
 .chess_middlegame{
     color:#ddd;
-    background-image: url("/resource/images/chess_middlegame1.jpg");
+    background-image: url("./images/chess_middlegame1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ header .menu{
 
 .chess_endgame{
     color:#ddd;
-    background-image: url("/resource/images/chess_endgame1.jpg");
+    background-image: url("./images/chess_endgame1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
