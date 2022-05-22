@@ -119,7 +119,7 @@ header .menu{
 }
 .article_part{
     margin-bottom: 150px;
-    padding: 10rem 8rem;
+    padding: 10rem 6rem;
 }
 
 .article_part:not(:first-child){
@@ -128,9 +128,10 @@ header .menu{
 .article_main h3{
     font-size: 50px;
     margin-bottom: 25px;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.704);
     display: inline-block;
     max-width: 100%;
+    padding-bottom: 15px;
 }
 
 .article_main p{
@@ -223,6 +224,9 @@ footer{
     }
     .show li.menu-item a {
         color: white;
+    }
+    .show li.menu-item a:hover {
+        border-bottom: 1px solid #bbb;
     }
     .article_top{
         padding: 8rem;
