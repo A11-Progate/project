@@ -86,7 +86,7 @@ header .menu{
 }
 
 .article_top{
-    background-image: url("resource/title_bg1.jpg");
+    background-image: url("/resource/images/title_bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     color : white;
@@ -95,7 +95,6 @@ header .menu{
     padding-bottom: 500px;
     text-align: center;
     background-size: cover;
-    /* width: 100%; */
 }
 
 .article_top h1{
@@ -107,6 +106,7 @@ header .menu{
 .article_top h2{
     font-style: italic;
     font-weight:100;
+    font-size: 40px;
 }
 
 .article_main{
@@ -141,7 +141,7 @@ header .menu{
 
 .chess_opening{
     color:#ddd;
-    background-image: url("resource/chess_opening1.jpg");
+    background-image: url("/resource/images/chess_opening1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ header .menu{
 
 .chess_middlegame{
     color:#ddd;
-    background-image: url("resource/chess_middlegame1.jpg");
+    background-image: url("/resource/images/chess_middlegame1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ header .menu{
 
 .chess_endgame{
     color:#ddd;
-    background-image: url("resource/chess_endgame1.jpg");
+    background-image: url("/resource/images/chess_endgame1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,6 +168,17 @@ header .menu{
     background-color: rgba(0,0,0,.45);
     padding: 15px;
     border-radius: 9px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 30px;
 }
 
 @media screen and (max-width: 720px){
@@ -209,17 +220,19 @@ header .menu{
     }
     .article_top{
         padding: 8rem;
-        font-size: 14px;
     }
     .article_top h1{
         font-size: 55px;
         margin-bottom: 30px;
     }
+    .article_top h2{
+        font-size: 26px;
+    }
     .article_part{
         padding: 5rem 2rem;
     }
     .article_part h3 {
-        font-size: 24px;
+        font-size: 28px;
     }
     .article_part p {
         font-size: 17px;
