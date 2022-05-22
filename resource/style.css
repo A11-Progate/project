@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Nunito:wght@400&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body{
-    height: 1000px;
+    font-family: "Nunito";
 }
 header{
     position: relative;
@@ -20,7 +20,15 @@ header{
     transition: .3s;
     font-size: 20px;
 }
-
+h3{
+    font-family: "Macondo";
+    font-size: 30px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, .2);
+    transition: .35s;
+}
+h3:hover{
+    text-shadow: 1px 1px 1px rgb(22, 152, 50);
+}
 h3 a {
     text-decoration: none;
     color: black;
@@ -35,6 +43,9 @@ header .menu{
 .menu-item a {
     color: black;
     text-decoration: none;
+}
+.menu-item a:hover{
+    text-shadow: 1px 1px 4px rgb(163, 14, 14);
 }
 
 .menu li:first-child{
@@ -73,24 +84,48 @@ header .menu{
 .icon{
     display: none;
 }
+
+main {
+    height: 1000px;
+}
+
 @media screen and (max-width: 720px){
+    header{
+        padding: 10px 25px;
+        z-index: 99999;
+    }
+    h3{
+        font-size: 28px;
+    }
     ul.menu{
         display: none;
     }
     .hamb-menu{
         display: none;
     }
-    /* .hamb-menu .menu-item{
-        display: none;
-    } */
     .icon{
         display: block;
         color: black;
         font-size: 28px;
     }
-    
+    .icon:active{
+        text-shadow: 1px 1px 8px rgba(87, 158, 162, 1);
+    }
     .show {
         display: block;
+        position: absolute;
+        top: 3.3rem;
+        left: 0;
+        font-size: 24px;
+        width: 100%;
+        background-color: black;
+        animation: slidein .7s forwards;
+    }
+    .show li.menu-item{
+        padding: 15px;
+    }
+    .show li.menu-item a {
+        color: white;
     }
 }
 
@@ -100,5 +135,16 @@ header .menu{
     }
     100%{
         top: 0;
+    }
+}
+
+@keyframes slidein{
+    0%{
+        top: -100px;
+        opacity: 0;
+    }
+    100%{
+        top: 3.3rem;
+        opacity: 1;
     }
 }
