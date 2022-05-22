@@ -6,10 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body{
-    height: 1000px;
+    font-family: "Nunito";
 }
 header{
     position: relative;
@@ -22,11 +19,18 @@ header{
     align-items: center;
     transition: .3s;
     font-size: 20px;
+    z-index: 99999;
 }
-
-h3 a {
-    text-decoration: none;
+h3.logo{
+    font-size: 30px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, .2);
+    transition: .35s;
+    font-family: "Macondo";
     color: black;
+    cursor: pointer;
+}
+h3.logo:hover{
+    text-shadow: 1px 1px 1px rgb(22, 152, 50);
 }
 
 header .menu{
@@ -38,6 +42,9 @@ header .menu{
 .menu-item a {
     color: black;
     text-decoration: none;
+}
+.menu-item a:hover{
+    text-shadow: 1px 1px 4px rgb(163, 14, 14);
 }
 
 .menu li:first-child{
@@ -58,7 +65,8 @@ header .menu{
     font-size: 15.5px;
 }
 
-.sticky h3 a {
+.sticky h3.logo{
+    font-size: 22px;
     color: white;
 }
 
@@ -76,38 +84,9 @@ header .menu{
 .icon{
     display: none;
 }
-@media screen and (max-width: 720px){
-    ul.menu{
-        display: none;
-    }
-    .hamb-menu{
-        display: none;
-    }
-    /* .hamb-menu .menu-item{
-        display: none;
-    } */
-    .icon{
-        display: block;
-        color: black;
-        font-size: 28px;
-    }
-    
-    .show {
-        display: block;
-    }
-}
-
-@keyframes fadein {
-    0%{
-        top: -100px;
-    }
-    100%{
-        top: 0;
-    }
-}
 
 .article_top{
-    background-image: url("/resource/title_bg.jpg");
+    background-image: url("/resource/title_bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     color : white;
@@ -115,6 +94,8 @@ header .menu{
     padding-top: 500px;
     padding-bottom: 500px;
     text-align: center;
+    background-size: cover;
+    /* width: 100%; */
 }
 
 .article_top h1{
@@ -129,16 +110,22 @@ header .menu{
 }
 
 .article_main{
-    text-align: justify;
+    text-align: center;
 }
 .article_part{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 400px 300px 400px 300px
+    margin-bottom: 150px;
+    padding: 10rem 8rem;
+}
+
+.article_part:not(:first-child){
+    box-shadow: 4px 4px 6px 5px rgba(0, 0, 0, .55);
 }
 .article_main h3{
     font-size: 50px;
     margin-bottom: 25px;
+    border-bottom: 1px solid #bbb;
+    display: inline-block;
+    max-width: 100%;
 }
 
 .article_main p{
@@ -153,29 +140,109 @@ header .menu{
 
 
 .chess_opening{
-    float:left;
     color:#ddd;
-    background-image: url("/resource/chess_opening.jpg");
-    background-size: 100%;
+    background-image: url("/resource/chess_opening1.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
 .chess_middlegame{
-    float:right;
     color:#ddd;
-    background-image: url("/resource/chess_middlegame.jpg");
-    background-size: 100%;
+    background-image: url("/resource/chess_middlegame1.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .chess_endgame{
-    float:right;
     color:#ddd;
-    background-image: url("/resource/chess_endgame.jpg");
-    background-size: 100%;
+    background-image: url("/resource/chess_endgame1.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{
+    background-color: rgba(0,0,0,.45);
+    padding: 15px;
+    border-radius: 9px;
+}
+
+@media screen and (max-width: 720px){
+    header{
+        padding: 10px 25px;
+    }
+    h3.logo{
+        font-size: 28px;
+    }
+    ul.menu{
+        display: none;
+    }
+    .hamb-menu{
+        display: none;
+    }
+    .icon{
+        display: block;
+        color: black;
+        font-size: 28px;
+    }
+    .icon:active{
+        text-shadow: 1px 1px 8px rgba(87, 158, 162, 1);
+    }
+    .show {
+        display: block;
+        position: absolute;
+        top: 3.3rem;
+        left: 0;
+        font-size: 24px;
+        width: 100%;
+        background-color: black;
+        animation: slidein .7s forwards;
+    }
+    .show li.menu-item{
+        padding: 15px;
+    }
+    .show li.menu-item a {
+        color: white;
+    }
+    .article_top{
+        padding: 8rem;
+        font-size: 14px;
+    }
+    .article_top h1{
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+    .article_part{
+        padding: 5rem 2rem;
+    }
+    .article_part h3 {
+        font-size: 24px;
+    }
+    .article_part p {
+        font-size: 17px;
+    }
+}
+
+
+@keyframes slidein{
+    0%{
+        top: -100px;
+        opacity: 0;
+    }
+    100%{
+        top: 3.3rem;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 0;
+    }
 }

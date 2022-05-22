@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resource/style.css">
+    <link rel="stylesheet" href="resource/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Nunito:wght@400&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
-    <div id="top"></div>
     <header>
-        <h3><a href="#top">A11 Project</a></h3>
+        <h3 class="logo">A-11 Project</h3>
         <ul class="menu">
             <li class="menu-item"><a href="https://github.com/A11-Progate/project" target="_blank">Source</a></li>
             <li class="menu-item"><a href="#about-member">About Us</a></li>
@@ -24,39 +26,49 @@
             <i class="fa fa-bars"></i>
           </a>
     </header>
-    <script src="/resource/script.js"></script>
 
-
-    <div class="main_article">
+    <main>
         <div class="article_top">
             <h1>How to win at chess</h1>
             <h2>A quick tip by a 1400 rated player</h2>
         </div>
         <div class="article_main">
-            <div class="article_part chess_introduction">
+            <section class="article_part chess_introduction bg-black">
                 <h3>Introduction</h3>
                 <p>In a game of chess, there are three phases: Opening, Middlegame, and Endgame. Each phases are played differently. In order to become a strong chess player, you should be able to understand the key to win each of this 3 phases, ultimately delivering checkmate to your opponent.</p>
-            </div>
-            <div class="article_part chess_opening">
-                <h3>Opening Phase</h3>
-                <p>The opening phase is a battle of memorization. This is because the only position that happen in every game is only the first turn. Even though there are practically infinite number of possibilities in a game of chess, there are only so many 'good' opening that brings advantage to a player over their opponent.</p>
+            </section>
+            <section class="article_part chess_opening">
+                <div class="text">
+                    
+                    <h3>Opening Phase</h3>
+                    <p>The opening phase is a battle of memorization. This is because the only position that happen in every game is only the first turn. Even though there are practically infinite number of possibilities in a game of chess, there are only so many 'good' opening that brings advantage to a player over their opponent.</p>
+    
+                    <p>While learning opening theory sounds scary for a beginner, it doesn't have to be. The general rule of thumb in opening phase is to develop your pieces or put your pieces in a more active square and get some sort of control of the middle board with the pawns and said pieces. You can try to experiment with some of your own opening combination before trying to look for opening theories. For beginners, some of the suggested openings are the London System for white and the Scandinavian Defense.</p>
+                </div>
+            </section>
 
-                <p>While learning opening theory sounds scary for a beginner, it doesn't have to be. The general rule of thumb in opening phase is to develop your pieces or put your pieces in a more active square and get some sort of control of the middle board with the pawns and said pieces. You can try to experiment with some of your own opening combination before trying to look for opening theories. For beginners, some of the suggested openings are the London System for white and the Scandinavian Defense.</p>
-            </div>
+            <section class="article_part chess_middlegame">
+                <div class="text">
+                    <h3>Middlegame</h3>
+                    <p>The middlegame is a battle of strategy and tactics. Now that we're out of known territory, It's up to each player's ability to strategize and plan to win the game. The main gameplan for this phase is to win opponent's material in order to have an upper hand in the endgame. If an opportunity to checkmate exists,  you of course should prioritize it. Just know that checkmating is far easier when your opponent have less pieces than you have.</p>
+                    
+                    <p>Now that you know the general gameplan, you need to sharpen your ability to plan out tactics. One fun way to practice is to do chess puzzles. Chess puzzles are often critical moment that determine who is winning and who is losing. It can be something as simple as finding a mate in two to hidden tactic that wins you a piece or even a complex sets of moves that only wins you a pawn (which is decisive in high elo game). There are other way to practice, but for now make sure you won't lose your queen in the 10th move.</p>
+                </div>
+            </section>
 
-            <div class="article_part chess_middlegame">
-                <h3>Middlegame</h3>
-                <p>The middlegame is a battle of strategy and tactics. Now that we're out of known territory, It's up to each player's ability to strategize and plan to win the game. The main gameplan for this phase is to win opponent's material in order to have an upper hand in the endgame. If an opportunity to checkmate exists,  you of course should prioritize it. Just know that checkmating is far easier when your opponent have less pieces than you have.</p>
-                <p>Now that you know the general gameplan, you need to sharpen your ability to plan out tactics. One fun way to practice is to do chess puzzles. Chess puzzles are often critical moment that determine who is winning and who is losing. It can be something as simple as finding a mate in two to hidden tactic that wins you a piece or even a complex sets of moves that only wins you a pawn (which is decisive in high elo game). There are other way to practice, but for now make sure you won't lose your queen in the 10th move.</p>
-            </div>
-
-            <div class="article_part chess_endgame">
-                <h3>Endgame</h3>
-                <p>The endgame is the final phase and often the most intense or relaxed depends on your advantage (or lack thereof) in the previous phase. If you're lucky and you're up in material, winning the endgame is easy. Make sure your king is safe, capture or exchange your opponent's last pieces, create a mating net and deliver the final checkmate. Just don't accidentally stalemate.</p>
-                <p>Now, if both player are equal in material or maybe you're even down material, things are a little bit more difficult. Your main goal here is to have your remaining pawn move all the way up and promote to a queen. As one or two pieces are left in the board, the king which usually is one of the weakest piece suddenly becomes the strongest. Carefully walk your king to the middle of the board in order to guard your pawn while blocking your enemy's king from your pawn. </p>
-                <p>Like opening and middlegame, there are some theories that you may want to learn in order have an advantage. Endgame theories are usually divided depending pieces and pawns that are left on the board. Looking into these may seems challenging, but once you get a hang of it, you will realize that it's actually a pattern.</p>
-            </div>
+            <section class="article_part chess_endgame">
+                <div class="text">
+                    <h3>Endgame</h3>
+                    <p>The endgame is the final phase and often the most intense or relaxed depends on your advantage (or lack thereof) in the previous phase. If you're lucky and you're up in material, winning the endgame is easy. Make sure your king is safe, capture or exchange your opponent's last pieces, create a mating net and deliver the final checkmate. Just don't accidentally stalemate.</p>
+                    
+                    <p>Now, if both player are equal in material or maybe you're even down material, things are a little bit more difficult. Your main goal here is to have your remaining pawn move all the way up and promote to a queen. As one or two pieces are left in the board, the king which usually is one of the weakest piece suddenly becomes the strongest. Carefully walk your king to the middle of the board in order to guard your pawn while blocking your enemy's king from your pawn. </p>
+                    
+                    <p>Like opening and middlegame, there are some theories that you may want to learn in order have an advantage. Endgame theories are usually divided depending pieces and pawns that are left on the board. Looking into these may seems challenging, but once you get a hang of it, you will realize that it's actually a pattern.</p>
+                </div>
+            </section>
+            <!-- <div class="clear-fix"></div> -->
         </div>
-    </div>
+    </main>
+    <script src="resource/script.js"></script>
 </body>
 </html>
