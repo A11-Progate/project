@@ -86,7 +86,7 @@ header .menu{
 }
 
 .article_top{
-    background-image: url("./images/title_bg1.jpg");
+    background-image: url("../resource/images/title_bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     color : white;
