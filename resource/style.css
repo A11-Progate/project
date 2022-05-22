@@ -15,7 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 25px 50px;
-    background-color: blanchedalmond;
+    background-color: rgba(255,235,205, 1);
     align-items: center;
     transition: .3s;
     font-size: 20px;
@@ -60,9 +60,14 @@ header .menu{
 .sticky{
     position: sticky;
     padding: 10px 20px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .75);
     color: white;
     font-size: 15.5px;
+}
+
+.sticky li:first-child{
+    border-right: 1px solid rgba(255, 255, 255, 0.504);
+    padding-right: 10px;
 }
 
 .sticky h3.logo{
@@ -184,6 +189,7 @@ footer{
 @media screen and (max-width: 720px){
     header{
         padding: 10px 25px;
+        background-color: rgba(255, 235, 205, .90);
     }
     h3.logo{
         font-size: 28px;
