@@ -64,6 +64,9 @@ header .menu{
     font-size: 15.5px;
 }
 
+.sticky h3{
+    font-size: 22px;
+}
 .sticky h3 a {
     color: white;
 }
