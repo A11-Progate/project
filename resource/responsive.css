@@ -3,8 +3,7 @@
     .article_part{
         padding: 12rem 8rem;
     }
-    .team_introduction{
-    }
+    
     .team_profiles{
         gap: 8rem;
         flex-direction: column;
