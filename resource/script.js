@@ -2,10 +2,10 @@
 const menu = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
-    if (document.body.clientWidth > 720) {
-        menu.classList.toggle('sticky', window.scrollY > 20)
+    if (document.documentElement.offsetWidth > 720) {
+        menu.classList.toggle('sticky', document.documentElement.scrollTop > 20)
     } else {
-        menu.classList.toggle('fade-in', window.scrollY > 100)
+        menu.classList.toggle('fade-in', document.documentElement.scrollTop > 100)
     }
 })
 

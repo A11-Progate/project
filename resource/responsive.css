@@ -1,0 +1,94 @@
+
+@media screen and ( max-width: 1000px ){
+    .team_profiles{
+        flex-direction: column;
+        width: 100%;
+        padding: 10rem 0;
+    }
+    
+    .member_profile{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    header{
+        padding: 10px 25px;
+        background-color: rgba(255, 235, 205, .90);
+    }
+    h3.logo{
+        font-size: 24px;
+    }
+    ul.menu{
+        display: none;
+    }
+    .hamb-menu{
+        display: none;
+    }
+    .icon{
+        display: block;
+        color: black;
+        font-size: 28px;
+    }
+    .icon:active{
+        text-shadow: 1px 1px 8px rgba(87, 158, 162, 1);
+    }
+    .show {
+        display: block;
+        position: absolute;
+        top: 3.3rem;
+        left: 0;
+        font-size: 24px;
+        width: 100%;
+        background-color: black;
+        animation: slidein .7s forwards;
+    }
+    .show li.menu-item{
+        padding: 15px;
+    }
+    .show li.menu-item a {
+        color: white;
+    }
+    .show li.menu-item a:hover {
+        border-bottom: 1px solid #bbb;
+    }
+    image.png
+    .article_top{
+        padding: 8rem;
+    }
+    .article_top{
+        padding: 10rem 3rem;
+    }
+    .article_top h1{
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+    .article_top h2{
+        font-size: 26px;
+    }
+    .article_part{
+        padding: 5rem 2rem;
+    }
+    .article_part h3 {
+        font-size: 28px;
+    }
+    .article_part p {
+        font-size: 17px;
+    }
+    
+    .team_title{
+        font-size: 1rem;
+    }
+    .team_profiles{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 10rem 0;
+    }
+    
+    .member_profile{
+        width: 80%;
+    }
+}

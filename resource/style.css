@@ -22,7 +22,7 @@ header{
     z-index: 99999;
 }
 h3.logo{
-    font-size: 30px;
+    font-size: 2rem;
     text-shadow: 4px 4px 3px rgba(0, 0, 0, .2);
     transition: .35s;
     font-family: "Macondo";
@@ -103,7 +103,7 @@ header .menu{
 }
 
 .article_top h1{
-    font-size: 102px;
+    font-size: 8rem;
     font-family: "Playfair Display",serif;
     font-weight: bold;
 }
@@ -125,6 +125,7 @@ header .menu{
 .article_part:not(:first-child){
     box-shadow: 4px 4px 6px 5px rgba(0, 0, 0, .55);
 }
+
 .article_main h3{
     font-size: 50px;
     margin-bottom: 25px;
@@ -187,68 +188,80 @@ footer{
     padding: 30px;
 }
 
-@media screen and (max-width: 720px){
-    header{
-        padding: 10px 25px;
-        background-color: rgba(255, 235, 205, .90);
-    }
-    h3.logo{
-        font-size: 28px;
-    }
-    ul.menu{
-        display: none;
-    }
-    .hamb-menu{
-        display: none;
-    }
-    .icon{
-        display: block;
-        color: black;
-        font-size: 28px;
-    }
-    .icon:active{
-        text-shadow: 1px 1px 8px rgba(87, 158, 162, 1);
-    }
-    .show {
-        display: block;
-        position: absolute;
-        top: 3.3rem;
-        left: 0;
-        font-size: 24px;
-        width: 100%;
-        background-color: black;
-        animation: slidein .7s forwards;
-    }
-    .show li.menu-item{
-        padding: 15px;
-    }
-    .show li.menu-item a {
-        color: white;
-    }
-    .show li.menu-item a:hover {
-        border-bottom: 1px solid #bbb;
-    }
-    .article_top{
-        padding: 8rem;
-    }
-    .article_top h1{
-        font-size: 45px;
-        margin-bottom: 30px;
-    }
-    .article_top h2{
-        font-size: 26px;
-    }
-    .article_part{
-        padding: 5rem 2rem;
-    }
-    .article_part h3 {
-        font-size: 28px;
-    }
-    .article_part p {
-        font-size: 17px;
-    }
+.team_introduction{
+    margin-top: 200px;
 }
 
+.team_title{
+    text-align: center;
+}
+
+.team_title h2{
+    margin-left : 30%;
+    margin-right: 30%;
+    border-bottom: 3px solid rgb(95, 95, 95);
+    font-size: 60px;
+    text-shadow: 6px 6px 3px rgb(197, 201, 202);
+}
+
+.team_profiles{
+    width: 100%;
+    padding: 10rem 7rem;
+    display: flex;
+    gap: 70px;
+}
+
+.member_profile{
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 25px 50px 25px;
+    background-color: #323435;
+    box-shadow: 7px 7px 6px 3px rgba(0, 0, 0, .55);
+    border-radius: 30px;
+}
+
+.member_profile img{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.member_profile h4{
+    font-size: 24px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    max-width: 75%;
+    color :white;
+    border-bottom: 2px solid grey;
+}
+
+.member_profile p{
+    font-size: 16px;
+    margin-top: 50px;
+    color :white;
+}
+
+.member_profile a{
+    background-color: rgb(117, 118, 124);
+    border : none;
+    border-radius: 9px;
+    color : rgb(218, 218, 218);
+    padding : 10px 15px 10px 15px;
+    display: block;
+    margin: 50px 30% auto 30%; 
+    text-decoration: none;  
+}
+
+.member_profile a:hover{
+    background-color: rgb(180, 180, 189);
+}
 
 @keyframes slidein{
     0%{
@@ -268,69 +281,4 @@ footer{
     100%{
         top: 0;
     }
-}
-
-.team_introduction{
-    margin-top: 700px;
-}
-
-.team_title{
-    text-align: center;
-}
-
-.team_title h2{
-    margin-left : 30%;
-    margin-right: 30%;
-    border-bottom: 3px solid rgb(95, 95, 95);
-    font-size: 60px;
-    text-shadow: 6px 6px 3px rgb(197, 201, 202);
-}
-
-.team_profiles{
-    margin : 200px;
-    display: flex;
-}
-
-
-.member_profile{
-    text-align: center;
-    margin: auto;
-    width: 40%;
-    padding: 60px 25px 50px 25px;
-    background-color: #323435;
-    box-shadow: 7px 7px 6px 3px rgba(0, 0, 0, .55);
-    border-radius: 30px;
-}
-
-.member_profile img{
-    width: 80%;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.member_profile h3{
-    font-size: 26px;
-    margin-top: 50px;
-    color :white;
-    border-bottom: 2px solid grey;
-}
-
-.member_profile p{
-    font-size: 16px;
-    margin-top: 50px;
-    color :white;
-}
-
-.member_profile a{
-    background-color: rgb(117, 118, 124);
-    border : none;
-    color : rgb(218, 218, 218);
-    padding : 10px 15px 10px 15px;
-    display: block;
-    margin: 50px 30% auto 30%; 
-    text-decoration: none;  
-}
-
-.member_profile a:hover{
-    background-color: rgb(180, 180, 189);
 }
