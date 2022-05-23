@@ -1,6 +1,12 @@
 
 @media screen and ( max-width: 1000px ){
+    .article_part{
+        padding: 12rem 8rem;
+    }
+    .team_introduction{
+    }
     .team_profiles{
+        gap: 8rem;
         flex-direction: column;
         width: 100%;
         padding: 10rem 0;
@@ -90,5 +96,7 @@
     
     .member_profile{
         width: 80%;
+        padding: 10px;
+        height: 550px;
     }
 }
